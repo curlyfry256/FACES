@@ -94,21 +94,47 @@ function mirrorLine(x1, y1, x2,y2) { //THIS MIRROS THE LEFT SIDE OF THE FACE
     function face(){
         
     strokeWeight(4); //SETS THE LINE THICKNESS TO 4
+    mirrorLine(300, 170, 360, 370) //OUTER NOSE LINE
+    mirrorLine(300, 170, 320, 360) //INNER NOSE LINE
+    mirrorLine(360, 370, 320, 360) //OUTER NOSE RIDGE
+    mirrorLine(320, 360, 300, 360) //MIDDLE NOSE RIDGE
+    mirrorLine(320, 360, 300, 380) //INNER NOSE
+    mirrorLine(360, 370, 380, 460) //NOSE TO OUTER LIP
+    mirrorLine(360, 370, 300, 380) //UNDER NOSE
+    mirrorLine(360, 370, 330, 420) //NOSE TO LIP LINE
+    mirrorLine(230, 230, 240, 370) //EYE TO OUTER NOSE
+    mirrorLine(240, 370, 130, 340) // CHEEK DENT
+    mirrorLine(200, 230, 130, 340) //OUTER CHEEK
+    mirrorLine(140, 190, 130, 340) //OUTER EYE TO CHEEK
+    mirrorLine(130, 340, 220, 460) //CHEEK TO OUTER MOUTH
+    mirrorLine(380, 460, 340, 500) //OUTER CHIN
+    mirrorLine(340, 500, 320, 460) //INNER CHIN
+    mirrorLine(340, 500, 300, 500) //LOWER CHIN
+    mirrorLine(130, 340, 160, 450) //UPPER JAW
+    mirrorLine(160, 450, 260, 500) //LOWER JAW
+    mirrorLine(130, 340, 120, 140) //OUTER HEAD
+    mirrorLine(120, 140 ,130, 100) //UPPER HEAD
+    mirrorLine(130, 100, 150, 60)  //OUTER UPPER HEAD
+    mirrorLine(150, 60, 300, 60) //TOP HEAD
+
+    strokeWeight(6); //SETS THE LINE THICKNESS TO 6 (MOUTH)
+    mirrorLine(330, 420, 300, 420) // UPPER LIP
+    mirrorLine(330, 420, 380, 460) //OUTER LIP
+    mirrorLine(380, 460, 300, 460 + micLevel*250) // LOWER LIP
+
+    mirrorLine(150,140, 210, 130 - micLevel*100) //LEFT EYEBROW
+    mirrorLine(210, 130, 250, 140 - micLevel*100) // RIGHT EYEBROW
+
+
+
     mirrorLine(150, 150, 140, 190); //LEFT EYE
     mirrorLine(150, 150, 230, 150); //TOP EYE
     mirrorLine(230, 150, 300, 170); //UPPER INNER EYE
     mirrorLine(140, 190, 200, 230); //LOWER LEFT EYE
-    mirrorLine(200, 230, 230, 230) // SIDE JAW
     mirrorLine(230, 230, 300, 170) //LOWER INNER EYE
-    mirrorLine(300, 170, 360, 370) //OUTER NOSE LINE
-    mirrorLine(300, 170, 320, 360) //INNER NOSE LINE
-    mirrorLine(360, 370, 320, 360) //OUTER NOSE RIDGE
-    mirrorLine(320, 360, 300, 360)//MIDDLE NOSE RIDGE
-    mirrorLine(360, 370, 300, 380)//UNDER NOSE
-    mirrorLine(360, 370, 350, 420)//NOSE TO LIP LINE
-    mirrorLine(350, 420, 300, 420); // UPPER LIP
-    mirrorLine(350, 420, 380, 460)//OUTER LIP
-    mirrorLine(380, 460, 300, 480 + micLevel*250); // LOWER LIP
+    mirrorLine(200, 230, 230, 230) // UNDER EYE
+
+
 
     //mirrorLine(240, 425, 300, 420 - micLevel*100)// UPPER CHIN
     //mirrorLine(250, 430, 300, 440 + micLevel*250); //LEFT CHIN WITH MIC LEVEL SO THE LINE LOVES WITH VOICE
